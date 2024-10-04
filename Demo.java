@@ -1,15 +1,31 @@
-package oopj24csb38;
-//import java.util.Scanner;
-public class Demo {
-    public static void main(String[] args) {
-    	char[] c={'b'};
-        removeCharFromString("abcbcdjfkd", c);
-       // removeCharFromString("Pankaj", 'a');
-    }
+package Tutorial;
 
-    private static void removeCharFromString(String input,char c[]) {
-    	String str=new String(c);
-        String result = input.replaceAll(str,"");
-        System.out.println(result);
-    }
+public class Demo {
+
+public static void main(String[] args) {
+
+try
+
+{ int firstNumber=0;
+
+int secondNumber=100;
+
+if(firstNumber==0)
+
+{
+
+throw new ArithmeticException("Division By Zero");
+
+}
+
+int result=secondNumber/firstNumber;
+
+System.out.println("Result="+result);
+
+}catch(ArithmeticException e)
+
+{ System.out.println("Division By Zero is not possible");}
+
+}
+
 }
